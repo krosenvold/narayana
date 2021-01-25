@@ -323,7 +323,7 @@ public class BaseTransaction
 		}
 	}
 
-	private static final ThreadFactory transactionThreadFactory = new NamedThreadFactory("Arjuna-Transaction");
+	private static final ThreadFactory transactionThreadFactory = new NamedThreadFactory("Narayana-Transaction");
 
 	private static final ThreadPoolExecutor tpe = new ThreadPoolExecutor(1, _asyncCommitPoolSize, 10, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(3), transactionThreadFactory);
 
